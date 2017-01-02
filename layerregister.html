@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--[if lte IE 8]>
+	<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+	<![endif]-->
+	<meta charset="utf-8">
+	<title>律师用户注册</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/rlregister.css">
+	<script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript" src="js/lyregister.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			var indexfunc=new indexObj();
+		})		
+	</script>
+</head>
+<body>
+<div class="content">
+	<div class="title">
+		<p class="greet">您好，欢迎来到辽宁市公安监管场所便民服务中心！</p>
+		<p class="date">2017年1月1日 星期二</p>
+	</div>
+	<div class="banner">
+		<img src="images/jhlogo.png" class="logo">
+	</div>
+	<div class="menu"><!--
+		--><div class="item"><a href="index.html">首页</a></div><!--
+		--><span></span><!--
+		--><div class="item"><a href="news.html">监管新闻</a></div><!--
+		--><span></span><!--
+		--><div class="item"><a href="openwork.html">警务公开</a></div><!--
+		--><span></span><!--
+		--><div class="item"><a href="law.html">法律法规</a></div><!--
+		--><span></span><!--
+		--><div class="item menuselect"><a href="appointment.html">预约会见</a></div><!--
+		--><span></span><!--
+		--><div class="item"><a href="question.html">常见问题</a></div><!--
+		--><span></span><!--
+		--><div class="item"><a href="prison.html">监所概况</a></div><!--
+		--><span></span><!--
+		--><div class="item last"><a href="message.html" class="last">网上留言</a></div>
+	</div>
+	<div class="main">
+		<div class="lyrgsdetail">
+			<div class="lydtltop"><span class="lydtltoplogo"></span><span class="lydtltoptitle">律师用户注册</span></div>
+			<div class="lydtcontain">
+				<div class="lystep1">
+				   <span class="step1"></span><!--
+				--><span class="step2"></span><!--
+				--><span class="step3"></span><!--
+				--><span class="step4"></span>
+				</div>
+
+				<form id="lyifo">
+
+				<div class="lydtinput1 dplyblock">
+					<div class="lydtusername">
+						<p class="lydttitle"><span>*</span>&nbsp;用户名：</p>
+						<input type="text" name="username" />
+						<p class="lydterrorhint">
+							<span class="lefthint"></span>
+							<span class="texthinterror">用户名长度为6-15位,并以字母开头（不含空格）</span>
+							<span class="texthintok">用户名可用</span>
+							<span class="righthint"></span>
+						</p>
+					</div>
+					<div class="lydtpsw">
+						<p class="lydttitle"><span>*</span>&nbsp;密码：</p>
+						<input type="password" name="password" />
+						<p class="lydterrorhint">
+							<span class="lefthint"></span>
+							<span class="texthinterror">密码长度为6-15位（不含空格）</span>
+							<span class="texthintok">密码可用</span>
+							<span class="righthint"></span>
+						</p>
+					</div>
+					<div class="lydtpswcfm">
+						<p class="lydttitle"><span>*</span>&nbsp;确认密码：</p>
+						<input type="password" name="confirm" />
+						<p class="lydterrorhint">
+							<span class="lefthint"></span>
+							<span class="texthinterror">密码格式需正确且一致</span>
+							<span class="texthintok">密码确认一致</span>
+							<span class="righthint"></span>
+						</p>
+					</div>
+					<div class="lydttruename">
+						<p class="lydttitle"><span>*</span>&nbsp;真实姓名：</p>
+						<input type="text" name="truename" />
+						<p class="lydterrorhint">
+							<span class="lefthint"></span>
+							<span class="texthinterror">真实姓名长度为15位以内</span>
+							<span class="texthintok">姓名可用</span>
+							<span class="righthint"></span>
+						</p>
+					</div>
+					<div class="lydtsex">
+						<p class="lydttitle"><span>*</span>&nbsp;性别：</p>
+						<select name="gender">
+							<option>男</option>
+							<option>女</option>
+						</select>
+					</div>
+					<div class="lydtbirthdate">
+						<p class="lydttitle"><span>*</span>&nbsp;出生日期：</p>
+						<input type="text" name="birthdate" />
+						<p class="lydterrorhint">
+							<span class="lefthint"></span>
+							<span class="texthinterror">请按格式填写，如：1999-01-01</span>
+							<span class="texthintok">日期格式正确</span>
+							<span class="righthint"></span>
+						</p>
+					</div>
+				</div>
+				<div class="nextprebt1 dplyblock">
+					<input class="next1" type="button" value="下一步" />
+				</div>
+
+				<div class="lydtinput2">
+					<div class="lydtdoctype">
+						<p class="lydttitle"><span>*</span>&nbsp;证件类型：</p>
+						<select name="doctype">
+							<option>身份证</option>
+							<option>居住证</option>
+						</select>
+					</div>
+					<div class="lydtdocnum">
+						<p class="lydttitle"><span>*</span>&nbsp;证件号码：</p>
+						<input type="text" name="docnum" />
+						<p class="lydterrorhint">
+							<span class="lefthint"></span>
+							<span class="texthinterror">身份证长度为15位或18位，其它为20位以内（字母或数字）</span>
+							<span class="texthintok">格式正确</span>
+							<span class="righthint"></span>
+						</p>
+					</div>
+					<div class="lydtinstitution">
+						<p class="lydttitle"><span>*</span>&nbsp;律师执业机构：</p>
+						<input type="text" name="institution" />
+						<p class="lydterrorhint">
+							<span class="lefthint"></span>
+							<span class="texthinterror">律师执业机构长度为25位以内（字母或数字）</span>
+							<span class="texthintok">格式正确</span>
+							<span class="righthint"></span>
+						</p>
+					</div>
+					<div class="lydtid">
+						<p class="lydttitle"><span>*</span>&nbsp;律师执业证号：</p>
+						<input type="text" name="id" />
+						<p class="lydterrorhint">
+							<span class="lefthint"></span>
+							<span class="texthinterror">律师执业证号长度为20位以内（字母或数字）</span>
+							<span class="texthintok">格式正确</span>
+							<span class="righthint"></span>
+						</p>
+					</div>
+					<div class="lydtqualification">
+						<p class="lydttitle"><span>*</span>&nbsp;律师资格证号：</p>
+						<input type="text" name="qualification" />
+						<p class="lydterrorhint">
+							<span class="lefthint"></span>
+							<span class="texthinterror">律师资格证号长度为30位以内（字母或数字）</span>
+							<span class="texthintok">格式正确</span>
+							<span class="righthint"></span>
+						</p>
+					</div>
+					<div class="lydtdocdate">
+						<p class="lydttitle"><span>*</span>&nbsp;律师发证日期：</p>
+						<input type="text" name="docdate" />
+						<p class="lydterrorhint">
+							<span class="lefthint"></span>
+							<span class="texthinterror">请按格式填写，如：1999-01-01</span>
+							<span class="texthintok">格式正确</span>
+							<span class="righthint"></span>
+						</p>
+					</div>
+
+					<div class="lydtphoto">
+						<p class="lydttitle"><span>*</span>&nbsp;律师证(正本)图片上传：</p>
+						<input type="file" name="photo" />
+						<p class="lydterrorhint">
+							<span class="lefthint"></span>
+							<span class="texthinterror">证件图片大小不超过1M（jpg格式）</span>
+							<span class="texthintok">上传成功</span>
+							<span class="righthint"></span>
+						</p>
+					</div>
+				</div>
+				<div class="nextprebt2">
+					<input class="pre2" type="button" value="上一步" />
+					<input class="next2" type="button" value="下一步" />
+				</div>
+
+				<div class="lydtinput3">
+
+					<div class="lydtlocation">
+						<p class="lydttitle"><span>*</span>&nbsp;户籍所在地：</p>
+						<input type="text" name="location" />
+						<p class="lydterrorhint">
+							<span class="lefthint"></span>
+							<span class="texthinterror">户籍所在地长度为100位以内</span>
+							<span class="texthintok">格式正确</span>
+							<span class="righthint"></span>
+						</p>
+					</div>
+
+					<div class="lydtaddress">
+						<p class="lydttitle"><span>*</span>&nbsp;现住址：</p>
+						<input type="text" name="address" />
+						<p class="lydterrorhint">
+							<span class="lefthint"></span>
+							<span class="texthinterror">现住址长度为100位以内</span>
+							<span class="texthintok">格式正确</span>
+							<span class="righthint"></span>
+						</p>
+					</div>
+
+					<div class="lydtmphone">
+						<p class="lydttitle"><span>*</span>&nbsp;手机号码：</p>
+						<input type="text" name="mphone" />
+						<p class="lydterrorhint">
+							<span class="lefthint"></span>
+							<span class="texthinterror">手机号码为11至13位</span>
+							<span class="texthintok">格式正确</span>
+							<span class="righthint"></span>
+						</p>
+					</div>
+
+					<div class="lydttel">
+						<p class="lydttitle"><span>*</span>&nbsp;所在律师执业机构电话：</p>
+						<input type="text" name="tel" />
+						<p class="lydterrorhint">
+							<span class="lefthint"></span>
+							<span class="texthinterror">请按格式填写，如024-63636388</span>
+							<span class="texthintok">格式正确</span>
+							<span class="righthint"></span>
+						</p>
+					</div>
+
+				</div>
+				<div class="nextprebt3">
+					<input class="pre3" type="button" value="上一步" />
+					<input class="next3" type="button" value="下一步" />
+				</div>
+
+				<div class="lydtinput4">
+
+					<div class="lydtprisoner">
+						<p class="lydttitle"><span>*</span>&nbsp;被监管人姓名：</p>
+						<input type="text" name="prisoner" />
+						<p class="lydterrorhint">
+							<span class="lefthint"></span>
+							<span class="texthinterror">被监管人姓名长度为15位以内</span>
+							<span class="texthintok">格式正确</span>
+							<span class="righthint"></span>
+						</p>
+					</div>
+
+					<div class="lydtprsdoctype">
+						<p class="lydttitle"><span>*</span>&nbsp;证件类型：</p>
+						<select name="prsdoctype">
+							<option>身份证</option>
+							<option>居住证</option>
+						</select>
+					</div>
+
+					<div class="lydtprsdocnum">
+						<p class="lydttitle"><span>*</span>&nbsp;被监管人证件号码：</p>
+						<input type="text" name="prsdocnum" />
+						<p class="lydterrorhint">
+							<span class="lefthint"></span>
+							<span class="texthinterror">身份证长度为15位或18位，其它为20位以内(字母或数字)</span>
+							<span class="texthintok">格式正确</span>
+							<span class="righthint"></span>
+						</p>
+					</div>
+
+					<div class="lydtprison">
+						<p class="lydttitle"><span>*</span>&nbsp;监所名称：</p>
+						<input type="text" name="prison" />
+						<p class="lydterrorhint">
+							<span class="lefthint"></span>
+							<span class="texthinterror">请填写正确监所名称</span>
+							<span class="texthintok">格式正确</span>
+							<span class="righthint"></span>
+						</p>
+					</div>
+
+					<div class="lydtrelation">
+						<p class="lydttitle"><span>*</span>&nbsp;与被监管人关系：</p>
+						<input type="text" name="relation" />
+						<p class="lydterrorhint">
+							<span class="lefthint"></span>
+							<span class="texthinterror">请填写与被监管人关系</span>
+							<span class="texthintok">格式正确</span>
+							<span class="righthint"></span>
+						</p>
+					</div>
+
+					<div class="lydttime">
+						<p class="lydttitle"><span>*</span>&nbsp;预约时间：</p>
+						<input class="date" type="text" name="time" />
+						<select class="hour" name="hour">
+							<option>9：</option>
+							<option>10：</option>
+							<option>11：</option>
+							<option>14：</option>
+							<option>15：</option>
+							<option>16：</option>
+							<option>17：</option>
+						</select>
+						<select class="minute" name="minute">
+							<option>00</option>
+							<option>15</option>
+							<option>30</option>
+							<option>45</option>
+						</select>
+						<p class="lydterrorhint">
+							<span class="lefthint"></span>
+							<span class="texthinterror">请填写具体时间，如：2013-08-01 9：15</span>
+							<span class="texthintok">格式正确</span>
+							<span class="righthint"></span>
+						</p>
+					</div>
+
+					<div class="lydtduration">
+						<p class="lydttitle"><span>*</span>&nbsp;预约时长：</p>
+						<div class="rdduration1">
+							<input type="radio" name="duration" value="30" checked="checked" />&nbsp;&nbsp;30
+						</div>
+						<div class="rdduration2">
+							<input type="radio" name="duration" value="60" />&nbsp;&nbsp;60
+						</div>
+						<div class="rdduration3">
+							<input type="radio" name="duration" value="90" />&nbsp;&nbsp;90
+						</div>
+						<div class="rdduration4">
+							<input type="radio" name="duration" value="120" />&nbsp;&nbsp;120
+						</div>
+					</div>
+
+					<div class="lydtmandator">
+						<p class="lydttitle"><span>*</span>&nbsp;委托人姓名：</p>
+						<input type="text" name="mandator" />
+						<p class="lydterrorhint">
+							<span class="lefthint"></span>
+							<span class="texthinterror">委托人姓名长度为15位以内</span>
+							<span class="texthintok">格式正确</span>
+							<span class="righthint"></span>
+						</p>
+					</div>
+
+					<div class="lydtatrztype">
+						<p class="lydttitle"><span>*</span>&nbsp;委托书类型：</p>
+						<div class="rdatrztype1">
+							<input type="radio" name="rdatrztype" value="委托书"  checked="checked"/>&nbsp;&nbsp;委托书
+						</div>
+						<div class="rdatrztype2">
+  							<input type="radio" name="rdatrztype" value="指定代理、辩护" />&nbsp;&nbsp;指定代理、辩护
+  						</div>
+					</div>
+
+					<div class="lydtatrzphoto">
+						<p class="lydttitle"><span>*</span>&nbsp;委托书图片上传：</p>
+						<input type="file" name="atrzphoto" />
+						<p class="lydterrorhint">
+							<span class="lefthint"></span>
+							<span class="texthinterror">图片大小不超过1M（jpg格式）</span>
+							<span class="texthintok">上传成功</span>
+							<span class="righthint"></span>
+						</p>
+					</div>
+
+					<div class="lydtletterphoto">
+						<p class="lydttitle"><span>*</span>&nbsp;事务所介绍信图片上传：</p>
+						<input type="file" name="letterphoto" />
+						<p class="lydterrorhint">
+							<span class="lefthint"></span>
+							<span class="texthinterror">图片大小不超过1M（jpg格式）</span>
+							<span class="texthintok">上传成功</span>
+							<span class="righthint"></span>
+						</p>
+					</div>
+
+					<div class="lydtnotification">
+						<p class="lydttitle"><span>*</span>&nbsp;是否有《安排律师会见涉密案件在押犯罪嫌疑人通知书》：</p>
+						<div class="rdyesno1">
+							<input type="radio" name="notification" value="是" />&nbsp;&nbsp;是
+						</div>
+						<div class="rdyesno1">
+  							<input type="radio" name="notification" value="否" checked="checked" />&nbsp;&nbsp;否
+  						</div>
+					</div>
+
+
+					<div class="lydttranslate">
+						<p class="lydttitle"><span>*</span>&nbsp;是否有翻译人员：</p>
+						<div class="rdyesno1">
+							<input type="radio" name="translate" value="是" />&nbsp;&nbsp;是
+						</div>
+						<div class="rdyesno1">
+  							<input type="radio" name="translate" value="否" checked="checked" />&nbsp;&nbsp;否
+  						</div>
+					</div>
+
+					<div class="lydtinternship">
+						<p class="lydttitle"><span>*</span>&nbsp;是否有实习人员：</p>
+						<div class="rdyesno1">
+							<input type="radio" name="internship" value="是" />&nbsp;&nbsp;是
+						</div>
+						<div class="rdyesno1">
+  							<input type="radio" name="internship" value="否" checked="checked" />&nbsp;&nbsp;否
+  						</div>
+					</div>
+
+				</div>
+				<div class="nextprebt4">
+					<input class="pre4" type="button" value="上一步" />
+					<input class="next4" type="button" value="提交" />
+				</div>
+
+				</form>
+				
+			</div>
+		</div>
+	</div>
+
+	<div class="foot">
+		<div class="footcontent"><p>版权所有：辽宁省公安XXXXXX<br>地址：XXXXXXXXX 邮编：XXXXXX 服务热线：XXX-XXX-XXX<br>技术支持：深圳市XXX计算机有限公司 推荐使用IE8.0以上版本浏览器1024*768分辨率</p></div>
+	</div>
+</div>
+</body>
+</html>

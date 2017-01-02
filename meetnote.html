@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--[if lte IE 8]>
+	<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+	<![endif]-->
+	<meta charset="utf-8">
+	<title>会见须知</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/appointment.css">
+	<script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".agreebt").on("click",function(){
+				if($("input[type='checkbox']").prop("checked")===true){
+					location.href = "rlregister.html";
+				}
+				else{
+					alert("请阅读网上会见须知")
+				}
+			})
+		})
+	</script>
+</head>
+<body>
+<div class="content">
+	<div class="title">
+		<p class="greet">您好，欢迎来到辽宁市公安监管场所便民服务中心！</p>
+		<p class="date">2017年1月1日 星期二</p>
+	</div>
+	<div class="banner">
+		<img src="images/jhlogo.png" class="logo">
+	</div>
+	<div class="menu"><!--
+		--><div class="item"><a href="index.html">首页</a></div><!--
+		--><span></span><!--
+		--><div class="item"><a href="news.html">监管新闻</a></div><!--
+		--><span></span><!--
+		--><div class="item"><a href="openwork.html">警务公开</a></div><!--
+		--><span></span><!--
+		--><div class="item"><a href="law.html">法律法规</a></div><!--
+		--><span></span><!--
+		--><div class="item menuselect"><a href="appointment.html">预约会见</a></div><!--
+		--><span></span><!--
+		--><div class="item"><a href="question.html">常见问题</a></div><!--
+		--><span></span><!--
+		--><div class="item"><a href="prison.html">监所概况</a></div><!--
+		--><span></span><!--
+		--><div class="item last"><a href="message.html" class="last">网上留言</a></div>
+	</div>
+	<div class="main meetnote">
+		<div class="mtntcontain">
+			<b class="notetitle">网上会见须知</b>
+			<div class="notecontent">
+				<p>根据《中华人民共和国看守条例》、《中华人民共和国看守条例实施办法》，看守所犯罪嫌疑人、被告人、罪犯会见工作须遵守一下规定：</p>
+				<p>一、犯罪嫌疑人、被告人、罪犯在羁押期间，经办案机关同意，并经公安机关批准，可以与近亲属会见。</p>
+				<p>二、犯罪嫌疑人、被告人、罪犯与其居住在香港、澳门、台湾的近亲属以及外国的近亲属会见，或者外国籍犯罪嫌疑人、被告人、罪犯与其近亲属、监护人及其所属国驻华使、领馆人员会见，均须经省、自治区、直辖市公安厅、局或者国家安全厅、局批准。</p>
+				<p>三、会见犯罪嫌疑人、被告人、罪犯，每月不超过一次，每次不超过半小时，每次会见的近亲属不超过三人。会见时，应当有办案人员和看守干警在场监视。对外国籍人犯，少数民族人犯和聋哑人犯，还必须由办案机关聘请翻译人员在场，会见中，严禁谈论案情，不准使用暗语交谈，不准私下传递物品违反规定不听制止，应即责令停止会见。</p>
+				<p>拘留所、强制隔离戒毒所、收容教育所等其它公安监管场所被监管人员会见工作参照以上规定执行。</p>
+			</div>
+			<div class="noteagree">
+				<div class="ntgrcheck">
+					<input type="checkbox" name="agreement" value="agree"/>已阅
+				</div>
+				<input type="button" class="agreebt" value="同意">
+				<input type="button" class="disagreebt" value="不同意">
+			</div>
+		</div>
+	</div>
+
+	<div class="foot">
+		<div class="footcontent"><p>版权所有：辽宁省公安XXXXXX<br>地址：XXXXXXXXX 邮编：XXXXXX 服务热线：XXX-XXX-XXX<br>技术支持：深圳市XXX计算机有限公司 推荐使用IE8.0以上版本浏览器1024*768分辨率</p></div>
+	</div>
+</div>
+</body>
+</html>

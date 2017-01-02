@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--[if lte IE 8]>
+	<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+	<![endif]-->
+	<meta charset="utf-8">
+	<title>监所概况</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/information.css">
+	<script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript" src="js/logincheck.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			var indexfunc=new indexObj();
+		})		
+	</script>
+</head>
+<body>
+<div class="content">
+	<div class="title">
+		<p class="greet">您好，欢迎来到辽宁市公安监管场所便民服务中心！</p>
+		<p class="date">2017年1月1日 星期二</p>
+	</div>
+	<div class="banner">
+		<img src="images/jhlogo.png" class="logo">
+	</div>
+	<div class="menu"><!--
+		--><div class="item"><a href="index.html">首页</a></div><!--
+		--><span></span><!--
+		--><div class="item"><a href="news.html">监管新闻</a></div><!--
+		--><span></span><!--
+		--><div class="item"><a href="openwork.html">警务公开</a></div><!--
+		--><span></span><!--
+		--><div class="item"><a href="law.html">法律法规</a></div><!--
+		--><span></span><!--
+		--><div class="item"><a href="appointment.html">预约会见</a></div><!--
+		--><span></span><!--
+		--><div class="item"><a href="question.html">常见问题</a></div><!--
+		--><span></span><!--
+		--><div class="item menuselect"><a href="prison.html">监所概况</a></div><!--
+		--><span></span><!--
+		--><div class="item last"><a href="message.html" class="last">网上留言</a></div>
+	</div>
+	<div class="main">
+		<div class="main-left">
+
+			<div class="personmnge">
+				<div class="ltitle">
+					<p>被监管人员会见管理</p>
+				</div>
+				<div class="input-area">
+					<div class="relationopt">
+						<a href="appointment.html" class="rlapply"><img src="images/mngmtbt1.png" class="rllogo"><p>家属会见申请</p></a>
+						<a href="appointment.html" class="rlrevocation"><img src="images/mngmtbt2.png" class="rllogo"><p>家属会见申请撤销</p></a>
+						<a href="appointment.html" class="rlprogress"><img src="images/mngmtbt3.png" class="rllogo"><p>进度查询</p></a>
+					</div>
+					<div class="rluser">
+						<p class="rlusername">用户：<span>未登录</span></p>
+						<a class="rlloginlink" href="appointment.html"><input type="button" class="rllogin" value="登录" /></a>
+					</div>
+				</div>
+				<div class="btshadow"></div>
+			</div>
+
+			<div class="mainleft1">
+				<div class="ml1top">
+					<p class="ml1title">监管新闻</p>
+					<a href="news.html" class="ml1more">更多》</a>
+				</div>
+
+				<div class="ml1content">
+					<ul>
+						<li><a href="#" class="ml1cttitle">新闻特写：拘留所里的安全课</a></li>
+						<li><a href="#" class="ml1cttitle">新闻特写：拘留所里的安全课</a></li>
+						<li><a href="#" class="ml1cttitle">新闻特写：拘留所里的安全课</a></li>
+						<li><a href="#" class="ml1cttitle">新闻特写：拘留所里的安全课</a></li>
+						<li><a href="#" class="ml1cttitle">新闻特写：拘留所里的安全课</a></li>
+						<li><a href="#" class="ml1cttitle">新闻特写：拘留所里的安全课</a></li>
+					</ul>
+				</div>
+
+			</div>
+
+			<div class="mainleft2">
+				<div class="ml2top">
+					<p class="ml2title">警务公开</p>
+					<a href="openwork.html" class="ml2more">更多》</a>
+				</div>
+
+				<div class="ml2content">
+					<ul>
+						<li><a href="#" class="ml2cttitle">
+						市局戒毒人员诊断评估指导委...</a></li>
+						<li><a href="#" class="ml2cttitle">市局戒毒人员诊断评估指导委...</a></li>
+						<li><a href="#" class="ml2cttitle">市局戒毒人员诊断评估指导委...</a></li>
+						<li><a href="#" class="ml2cttitle">市局戒毒人员诊断评估指导委...</a></li>
+						<li><a href="#" class="ml2cttitle">市局戒毒人员诊断评估指导委...</a></li>
+						<li><a href="#" class="ml2cttitle">市局戒毒人员诊断评估指导委...</a></li>
+					</ul>
+				</div>				
+			</div>
+
+			<div class="leavemes">
+				<a href="message.html" class="lmlink">我要留言MESSAGE</a>
+			</div>
+
+		</div>
+		<div class="main-right">
+
+			<div class="mainright1">
+				<div class="mr1top">
+					<div class="mr1title"><span>监所概况</span></div>
+					<a href="prison.html" class="mr1more">更多》</a>
+				</div>
+
+				<div class="mr1content prison ovflvi">
+					<table class="psdetail" id="chaoyangshi">
+						<tr>
+							<td><span class="psindex">1</span>凌源市看守所</td>
+							<td><span class="psindex">2</span>建平县看守所</td>
+							<td><span class="psindex">3</span>喀左县看守所</td>
+							<td><span class="psindex">4</span>朝阳县看守所</td>
+							<td><span class="psindex">5</span>朝阳市看守所</td>
+						</tr>
+						<tr>
+							<td><span class="psindex">6</span>北票市看守所</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+					</table>
+					<table class="psdetail" id="huludaoshi">
+						<tr>
+							<td><span class="psindex">7</span>建昌县看守所</td>
+							<td><span class="psindex">8</span>绥中县看守所</td>
+							<td><span class="psindex">9</span>兴城市看守所</td>
+							<td><span class="psindex">10</span>葫芦岛市看守所</td>
+							<td><span class="psindex">11</span>南票区看守所</td>
+						</tr>
+					</table>
+					<table class="psdetail" id="jinzhoushi">
+						<tr>
+							<td><span class="psindex">12</span>锦州市第二看守所</td>
+							<td><span class="psindex">13</span>锦州市第一看守所</td>
+							<td><span class="psindex">14</span>凌海市看守所</td>
+							<td><span class="psindex">15</span>义县看守所</td>
+							<td><span class="psindex">16</span>北宁市看守所</td>
+						</tr>
+						<tr>
+							<td><span class="psindex">17</span>黑山县看守所</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+					</table>
+					<table class="psdetail" id="fuxinshi">
+						<tr>
+							<td><span class="psindex">18</span>阜新市看守所</td>
+							<td><span class="psindex">19</span>阜新县看守所</td>
+							<td><span class="psindex">20</span>彰武县看守所</td>
+							<td class=""><span class="vsblhid"><span class="psindex ">20</span>彰武县看守所</span></td>
+							<td><span class="vsblhid"><span class="psindex">20</span>彰武县看守所</span></td>
+						</tr>
+					</table>
+					<table class="psdetail" id="shenyangshi">
+						<tr>
+							<td><span class="psindex">21</span>康平县看守所</td>
+							<td><span class="psindex">22</span>法库县看守所</td>
+							<td><span class="psindex">23</span>新城子区看守所</td>
+							<td><span class="psindex">24</span>皇姑区看守所</td>
+							<td><span class="psindex">25</span>大东区看守所</td>
+						</tr>
+						<tr>
+							<td><span class="psindex">26</span>沈阳市看守所</td>
+							<td><span class="psindex">27</span>铁西区看守所</td>
+							<td><span class="psindex">28</span>辽中县看守所</td>
+							<td><span class="psindex">29</span>新民市看守所</td>
+							<td><span class="psindex">30</span>和平区看守所</td>
+						</tr>
+						<tr>
+							<td><span class="psindex">31</span>苏家屯区看守所</td>
+							<td><span class="psindex">32</span>沈河区看守所</td>
+							<td><span class="psindex">33</span>东陵区看守所</td>
+							<td><span class="psindex">34</span>于洪区看守所</td>
+							<td></td>
+						</tr>
+					</table>
+					<table class="psdetail" id="liaoyangshi">
+						<tr>
+							<td><span class="psindex">35</span>灯塔市看守所</td>
+							<td><span class="psindex">36</span>辽阳市看守所</td>
+							<td><span class="psindex">37</span>辽阳县看守所</td>
+							<td class=""><span class="vsblhid"><span class="psindex ">20</span>彰武县看守所</span></td>
+							<td><span class="vsblhid"><span class="psindex">20</span>彰武县看守所</span></td>
+						</tr>
+					</table>
+					<table class="psdetail" id="anshanshi">
+						<tr>
+							<td><span class="psindex">38</span>台安县看守所</td>
+							<td><span class="psindex">39</span>鞍山市第一看守所</td>
+							<td><span class="psindex">40</span>鞍山市第二看守所</td>
+							<td><span class="psindex">41</span>鞍山女子看守所</td>
+							<td><span class="psindex">42</span>海城市看守所</td>
+						</tr>
+						<tr>
+							<td><span class="psindex">43</span>北票市看守所</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+					</table>
+					<table class="psdetail" id="panjinshi">
+						<tr>
+							<td><span class="psindex">44</span>灯塔市看守所</td>
+							<td><span class="psindex">45</span>辽阳市看守所</td>
+							<td><span class="psindex">46</span>辽阳县看守所</td>
+							<td class=""><span class="vsblhid"><span class="psindex ">20</span>彰武县看守所</span></td>
+							<td><span class="vsblhid"><span class="psindex">20</span>彰武县看守所</span></td>
+						</tr>
+					</table>
+					<table class="psdetail" id="yingkoushi">
+						<tr>
+							<td><span class="psindex">47</span>营口市看守所</td>
+							<td><span class="psindex">48</span>大石桥市看守所</td>
+							<td><span class="psindex">49</span>鲅鱼圈区看守所</td>
+							<td><span class="psindex">50</span>盖州市看守所</td>
+							<td><span class="vsblhid"><span class="psindex">20</span>彰武县看守所</span></td>
+						</tr>
+					</table>
+					<table class="psdetail" id="tielingshi">
+						<tr>
+							<td><span class="psindex">51</span>昌图县看守所</td>
+							<td><span class="psindex">52</span>西丰县看守所</td>
+							<td><span class="psindex">53</span>铁岭县看守所</td>
+							<td><span class="psindex">54</span>调兵山市看守所</td>
+							<td><span class="psindex">55</span>铁岭市看守所</td>
+						</tr>
+						<tr>
+							<td><span class="psindex">56</span>开原市看守所</td>
+							<td><span class="psindex">57</span>清河区看守所所</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+					</table>
+					<table class="psdetail" id="fushunshi">
+						<tr>
+							<td><span class="psindex">58</span>清源县看守所</td>
+							<td><span class="psindex">59</span>抚顺市第一看守所</td>
+							<td><span class="psindex">60</span>抚顺市第二看守所</td>
+							<td><span class="psindex">61</span>新宾县看守所</td>
+							<td><span class="vsblhid"><span class="psindex">20</span>彰武县看守所</span></td>
+						</tr>
+					</table>
+					<table class="psdetail" id="benxishi">
+						<tr>
+							<td><span class="psindex">62</span>本溪市看守所</td>
+							<td><span class="psindex">63</span>本溪县看守所</td>
+							<td><span class="psindex">64</span>桓仁县看守所</td>
+							<td><span class="vsblhid"><span class="psindex">20</span>彰武县看守所</span></td>
+							<td><span class="vsblhid"><span class="psindex">20</span>彰武县看守所</span></td>
+						</tr>
+					</table>
+					<table class="psdetail" id="dandongshi">
+						<tr>
+							<td><span class="psindex">65</span>宽甸县看守所</td>
+							<td><span class="psindex">66</span>凤城市看守所</td>
+							<td><span class="psindex">67</span>丹东市看守所</td>
+							<td><span class="psindex">68</span>东港市看守所</td>
+							<td><span class="vsblhid"><span class="psindex">20</span>彰武县看守所</span></td>
+						</tr>
+					</table>
+					<table class="psdetail" id="dalianshi">
+						<tr>
+							<td><span class="psindex">69</span>庄河县看守所</td>
+							<td><span class="psindex">70</span>瓦房店市看守所</td>
+							<td><span class="psindex">71</span>普兰店市看守所</td>
+							<td><span class="psindex">72</span>长海县看守所</td>
+							<td><span class="psindex">73</span>金州区看守所</td>
+						</tr>
+						<tr>
+							<td><span class="psindex">74</span>开发区看守所</td>
+							<td><span class="psindex">75</span>大连市所看守所</td>
+							<td><span class="psindex">76</span>旅顺口区看守所</td>
+							<td></td>
+							<td></td>
+						</tr>
+					</table>
+
+					<table class="mr1city">
+						<tr class="citydetail">			
+							<td class="chaoyangshi"><img class="arrow" src="images/arrow.jpg">朝阳市</td>
+							<td class="huludaoshi"><img class="arrow" src="images/arrow.jpg">葫芦岛市</td>
+							<td class="jinzhoushi"><img class="arrow" src="images/arrow.jpg">锦州市</td>
+							<td class="fuxinshi"><img class="arrow" src="images/arrow.jpg">阜新市</td>
+							<td class="shenyangshi"><img class="arrow" src="images/arrow.jpg">沈阳市</td>
+							<td class="liaoyangshi"><img class="arrow" src="images/arrow.jpg">辽阳市</td>
+							<td class="anshanshi"><img class="arrow" src="images/arrow.jpg">鞍山市</td>
+						</tr>
+						<tr class="citydetail">
+							<td class="panjinshi"><img class="arrow" src="images/arrow.jpg">盘锦市</td>
+							<td class="yingkoushi"><img class="arrow" src="images/arrow.jpg">营口市</td>
+							<td class="tielingshi"><img class="arrow" src="images/arrow.jpg">铁岭市</td>
+							<td class="fushunshi"><img class="arrow" src="images/arrow.jpg">抚顺市</td>
+							<td class="benxishi"><img class="arrow" src="images/arrow.jpg">本溪市</td>
+							<td class="dandongshi"><img class="arrow" src="images/arrow.jpg">丹东市</td>
+							<td class="dalianshi"><img class="arrow" src="images/arrow.jpg">大连市</td>
+						</tr>
+					</table>
+
+					<div class="mr1prison"><img src="images/ditu.jpg"></div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="bottomlink">
+		<div class="btlinkitem"><a href="#"><img src="images/btlink1.png"></a></div>
+		<div class="btlinkitem"><a href="#"><img src="images/btlink2.png"></a></div>
+		<div class="btlinkitem"><a href="#"><img src="images/btlink3.png"></a></div>
+		<div class="btlinkitem"><a href="#"><img src="images/btlink4.png"></a></div>
+		<div class="btlinkitem"><a href="#"><img src="images/btlink5.png"></a></div>
+		<div class="btlinkitem last"><a href="#"><img src="images/btlink6.png"></a></div>
+	</div>
+	<div class="foot">
+		<div class="footcontent"><p>版权所有：辽宁省公安XXXXXX<br>地址：XXXXXXXXX 邮编：XXXXXX 服务热线：XXX-XXX-XXX<br>技术支持：深圳市XXX计算机有限公司 推荐使用IE8.0以上版本浏览器1024*768分辨率</p></div>
+	</div>
+</div>
+</body>
+</html>

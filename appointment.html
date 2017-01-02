@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--[if lte IE 8]>
+	<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+	<![endif]-->
+	<meta charset="utf-8">
+	<title>预约会见</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/appointment.css">
+	<script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			var indexfunc=new indexObj();
+			username=getCookie('username')
+		    if (username!=null && username!=""){
+		      	$(".apmlogin").addClass("dplynone");
+				$(".apmwel").removeClass("dplynone");
+		  	 }
+		})		
+	</script>
+</head>
+<body>
+<div class="content">
+	<div class="title">
+		<p class="greet">您好，欢迎来到辽宁市公安监管场所便民服务中心！</p>
+		<p class="date">2017年1月1日 星期二</p>
+	</div>
+	<div class="banner">
+		<img src="images/jhlogo.png" class="logo">
+	</div>
+	<div class="menu"><!--
+		--><div class="item"><a href="index.html">首页</a></div><!--
+		--><span></span><!--
+		--><div class="item"><a href="news.html">监管新闻</a></div><!--
+		--><span></span><!--
+		--><div class="item"><a href="openwork.html">警务公开</a></div><!--
+		--><span></span><!--
+		--><div class="item"><a href="law.html">法律法规</a></div><!--
+		--><span></span><!--
+		--><div class="item menuselect"><a href="appointment.html">预约会见</a></div><!--
+		--><span></span><!--
+		--><div class="item"><a href="question.html">常见问题</a></div><!--
+		--><span></span><!--
+		--><div class="item"><a href="prison.html">监所概况</a></div><!--
+		--><span></span><!--
+		--><div class="item last"><a href="message.html" class="last">网上留言</a></div>
+	</div>
+	<div class="main">
+		<div class="appointment">
+			<div class="shader"></div>
+			<div class="apmwel dplynone">欢迎</div>
+			<div class="apmlogin">
+				<div class="apmclose"></div>
+				<p class="apmtitle">用户登录</p>
+				<div class="apmname"><input type="text"/></div>
+				<div class="apmpsw"><input type="password"/></div>
+				<div class="apmhint"><span class="apmerro">用户名或密码错误</span><a href="#" class="apmforgetpsw">忘记密码？</a></div>
+				<input class="apmloginbt" type="button" />
+				<div class="opmnewuser"><p class="nuhint">如果您是首次登录，请您注册！</p><a href="javascript:;" class="nubg"></a></div>
+			</div>
+			<div class="register">
+				<div class="rlrgs">
+					<p>家属用户</p>
+					<a href="meetnote.html" class="rlrgsbt"></a>
+				</div>
+				<div class="layerrgs">
+					<p>律师用户</p>
+					<a href="layerregister.html" class="layerrgsbt"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="foot">
+		<div class="footcontent"><p>版权所有：辽宁省公安XXXXXX<br>地址：XXXXXXXXX 邮编：XXXXXX 服务热线：XXX-XXX-XXX<br>技术支持：深圳市XXX计算机有限公司 推荐使用IE8.0以上版本浏览器1024*768分辨率</p></div>
+	</div>
+</div>
+</body>
+</html>

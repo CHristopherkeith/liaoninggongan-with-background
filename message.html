@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--[if lte IE 8]>
+	<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+	<![endif]-->
+	<meta charset="utf-8">
+	<title>网上留言</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/questionmessage.css">
+	<script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			var indexfunc=new indexObj();
+		})		
+	</script>
+</head>
+<body>
+<div class="content">
+	<div class="title">
+		<p class="greet">您好，欢迎来到辽宁市公安监管场所便民服务中心！</p>
+		<p class="date">2017年1月1日 星期二</p>
+	</div>
+	<div class="banner">
+		<img src="images/jhlogo.png" class="logo">
+	</div>
+	<div class="menu"><!--
+		--><div class="item"><a href="index.html">首页</a></div><!--
+		--><span></span><!--
+		--><div class="item"><a href="news.html">监管新闻</a></div><!--
+		--><span></span><!--
+		--><div class="item"><a href="openwork.html">警务公开</a></div><!--
+		--><span></span><!--
+		--><div class="item"><a href="law.html">法律法规</a></div><!--
+		--><span></span><!--
+		--><div class="item"><a href="appointment.html">预约会见</a></div><!--
+		--><span></span><!--
+		--><div class="item"><a href="question.html">常见问题</a></div><!--
+		--><span></span><!--
+		--><div class="item"><a href="prison.html">监所概况</a></div><!--
+		--><span></span><!--
+		--><div class="item last menuselect"><a href="message.html" class="last">网上留言</a></div>
+	</div>
+	<div class="main">
+		<div class="message">
+			<dir class="mstop">
+				<b>留言查询</b>
+				<p class="mskeyword">关键字</p>
+				<input type="text" class="mskwinput" />
+				<select class="mskwtype">
+					<option>留言</option>
+					<option>回复</option>
+				</select>
+				<select class="mskwtype">
+					<option>留言</option>
+					<option>回复</option>
+				</select>
+				<input type="submit" value="查询" class="mskwquery" />
+				<input type="submit" value="查询所有" class="mskwqueryall"/>
+				<input type="button" class="msbt" value="我要留言" />
+			</dir>
+			<div class="mscontain">
+				<div class="msbox">
+					<div class="msboxtop">
+						<b class="msboxtext">我要留言</b>
+						<span class="msbxclose"></span>
+					</div>
+					<div class="msbxcontain">
+						<div class="msbxctname">
+							<p class="msbxtitle">姓名:(<span>*</span>)</p>
+							<input class="msbxinput" type="text" />
+						</div>
+						<div class="msbxctemail">
+							<p class="msbxtitle">联系邮箱:(<span>*</span>)</p>
+							<input class="msbxinput" type="text" />
+						</div>
+						<div class="msbxcttel">
+							<p class="msbxtitle">联系电话:</p>
+							<input class="msbxinput" type="text" />
+						</div>
+						<div class="msbxctcontent">
+							<p class="msbxtitle">留言内容:(<span>*</span>)<br>500汉字以内</p>
+							<textarea class="mxcontent"></textarea>
+						</div>
+						<div class="msbxctvrf">
+							<p class="msbxtitle">验证码:</p>
+							<input class="msbxinput" type="text" />
+							<p class="msbxvrf"><span>看不清，换一张</span></p>
+						</div>
+						<input type="submit" class="msboxsubmit" value="提交" />
+					</div>
+				</div>	
+				<table class="msdetail">
+					<tr class="msdtifo">
+						<td class="publisher"><span></span>发布者:你好吗你好吗</td>
+						<td class="ip"><span></span>IP:192.168.1.252</td>
+						<td class="plstime"><span></span>发布时间:2013-08-08 15:12</td>
+					</tr>
+					<tr class="msdtquestion">
+						<td colspan="3">
+						<span class="msdtqslogo"></span>
+						<b>问:&nbsp;</b>
+						<p>常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常.</p>
+						<span class="mscollapse"></span>
+						</td>
+					</tr>
+					<tr class="msdtanswer">
+						<td colspan="3">
+							<div class="msascontain">
+								<span class="msdtaslogo"></span>
+								<b>回复:&nbsp;</b>
+								<p>常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常.</p>
+								<p class="msdtasdate">2013-08-08 15:12</p>
+								<span class="msadd">追加提问</span>
+							</div>
+							<div class="msascontain">
+								<span class="msdtqslogo"></span>
+								<b>追问:&nbsp;</b>
+								<p>常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常.</p>
+								<p class="msdtasdate">2013-08-08 15:12</p>
+							</div>
+							<div class="msascontain">
+								<span class="msdtaslogo"></span>
+								<b>回复:&nbsp;</b>
+								<p>常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常.</p>
+								<p class="msdtasdate">2013-08-08 15:12</p>
+								<span class="msadd">追加提问</span>
+							</div>
+							<div class="msascontain">
+								<span class="msdtaslogo"></span>
+								<b>回复:&nbsp;</b>
+								<p>常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常.</p>
+								<p class="msdtasdate">2013-08-08 15:12</p>
+								<span class="msadd">追加提问</span>
+							</div>
+						</td>
+					</tr>
+				</table>
+
+				<table class="msdetail">
+					<tr class="msdtifo">
+						<td class="publisher"><span></span>发布者:你好吗你好吗</td>
+						<td class="ip"><span></span>IP:192.168.1.252</td>
+						<td class="plstime"><span></span>发布时间:2013-08-08 15:12</td>
+					</tr>
+					<tr class="msdtquestion">
+						<td colspan="3">
+						<span class="msdtqslogo"></span>
+						<b>问:&nbsp;</b>
+						<p>常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常.</p>
+						<span class="mscollapse"></span>
+						</td>
+					</tr>
+					<tr class="msdtanswer">
+						<td colspan="3">
+							<div class="msascontain">
+								<span class="msdtaslogo"></span>
+								<b>回复:&nbsp;</b>
+								<p>常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常.</p>
+								<p class="msdtasdate">2013-08-08 15:12</p>
+								<span class="msadd">追加提问</span>
+							</div>
+							<div class="msascontain">
+								<span class="msdtqslogo"></span>
+								<b>追问:&nbsp;</b>
+								<p>常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常.</p>
+								<p class="msdtasdate">2013-08-08 15:12</p>
+							</div>
+							<div class="msascontain">
+								<span class="msdtaslogo"></span>
+								<b>回复:&nbsp;</b>
+								<p>常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常.</p>
+								<p class="msdtasdate">2013-08-08 15:12</p>
+								<span class="msadd">追加提问</span>
+							</div>
+							<div class="msascontain">
+								<span class="msdtaslogo"></span>
+								<b>回复:&nbsp;</b>
+								<p>常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常.</p>
+								<p class="msdtasdate">2013-08-08 15:12</p>
+								<span class="msadd">追加提问</span>
+							</div>
+						</td>
+					</tr>
+				</table>
+
+				<table class="msdetail">
+					<tr class="msdtifo">
+						<td class="publisher"><span></span>发布者:你好吗你好吗</td>
+						<td class="ip"><span></span>IP:192.168.1.252</td>
+						<td class="plstime"><span></span>发布时间:2013-08-08 15:12</td>
+					</tr>
+					<tr class="msdtquestion">
+						<td colspan="3">
+						<span class="msdtqslogo"></span>
+						<b>问:&nbsp;</b>
+						<p>常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常.</p>
+						<span class="mscollapse"></span>
+						</td>
+					</tr>
+					<tr class="msdtanswer">
+						<td colspan="3">
+							<div class="msascontain">
+								<span class="msdtaslogo"></span>
+								<b>回复:&nbsp;</b>
+								<p>常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常.</p>
+								<p class="msdtasdate">2013-08-08 15:12</p>
+								<span class="msadd">追加提问</span>
+							</div>
+							<div class="msascontain">
+								<span class="msdtqslogo"></span>
+								<b>追问:&nbsp;</b>
+								<p>常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常.</p>
+								<p class="msdtasdate">2013-08-08 15:12</p>
+							</div>
+							<div class="msascontain">
+								<span class="msdtaslogo"></span>
+								<b>回复:&nbsp;</b>
+								<p>常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常.</p>
+								<p class="msdtasdate">2013-08-08 15:12</p>
+								<span class="msadd">追加提问</span>
+							</div>
+							<div class="msascontain">
+								<span class="msdtaslogo"></span>
+								<b>回复:&nbsp;</b>
+								<p>常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常.</p>
+								<p class="msdtasdate">2013-08-08 15:12</p>
+								<span class="msadd">追加提问</span>
+							</div>
+						</td>
+					</tr>
+				</table>
+
+				<table class="msdetail">
+					<tr class="msdtifo">
+						<td class="publisher"><span></span>发布者:你好吗你好吗</td>
+						<td class="ip"><span></span>IP:192.168.1.252</td>
+						<td class="plstime"><span></span>发布时间:2013-08-08 15:12</td>
+					</tr>
+					<tr class="msdtquestion">
+						<td colspan="3">
+						<span class="msdtqslogo"></span>
+						<b>问:&nbsp;</b>
+						<p>常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常.</p>
+						<span class="mscollapse"></span>
+						</td>
+					</tr>
+					<tr class="msdtanswer">
+						<td colspan="3">
+							<div class="msascontain">
+								<span class="msdtaslogo"></span>
+								<b>回复:&nbsp;</b>
+								<p>常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常.</p>
+								<p class="msdtasdate">2013-08-08 15:12</p>
+								<span class="msadd">追加提问</span>
+							</div>
+							<div class="msascontain">
+								<span class="msdtqslogo"></span>
+								<b>追问:&nbsp;</b>
+								<p>常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常.</p>
+								<p class="msdtasdate">2013-08-08 15:12</p>
+							</div>
+							<div class="msascontain">
+								<span class="msdtaslogo"></span>
+								<b>回复:&nbsp;</b>
+								<p>常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常.</p>
+								<p class="msdtasdate">2013-08-08 15:12</p>
+								<span class="msadd">追加提问</span>
+							</div>
+							<div class="msascontain">
+								<span class="msdtaslogo"></span>
+								<b>回复:&nbsp;</b>
+								<p>常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常.</p>
+								<p class="msdtasdate">2013-08-08 15:12</p>
+								<span class="msadd">追加提问</span>
+							</div>
+						</td>
+					</tr>
+				</table>
+
+				<table class="msdetail">
+					<tr class="msdtifo">
+						<td class="publisher"><span></span>发布者:你好吗你好吗</td>
+						<td class="ip"><span></span>IP:192.168.1.252</td>
+						<td class="plstime"><span></span>发布时间:2013-08-08 15:12</td>
+					</tr>
+					<tr class="msdtquestion">
+						<td colspan="3">
+						<span class="msdtqslogo"></span>
+						<b>问:&nbsp;</b>
+						<p>常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常.</p>
+						<span class="mscollapse"></span>
+						</td>
+					</tr>
+					<tr class="msdtanswer">
+						<td colspan="3">
+							<div class="msascontain">
+								<span class="msdtaslogo"></span>
+								<b>回复:&nbsp;</b>
+								<p>常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常.</p>
+								<p class="msdtasdate">2013-08-08 15:12</p>
+								<span class="msadd">追加提问</span>
+							</div>
+							<div class="msascontain">
+								<span class="msdtqslogo"></span>
+								<b>追问:&nbsp;</b>
+								<p>常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常.</p>
+								<p class="msdtasdate">2013-08-08 15:12</p>
+							</div>
+							<div class="msascontain">
+								<span class="msdtaslogo"></span>
+								<b>回复:&nbsp;</b>
+								<p>常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常.</p>
+								<p class="msdtasdate">2013-08-08 15:12</p>
+								<span class="msadd">追加提问</span>
+							</div>
+							<div class="msascontain">
+								<span class="msdtaslogo"></span>
+								<b>回复:&nbsp;</b>
+								<p>常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常见问题常.</p>
+								<p class="msdtasdate">2013-08-08 15:12</p>
+								<span class="msadd">追加提问</span>
+							</div>
+						</td>
+					</tr>
+				</table>
+			</div>		
+			<div class="page"><p>共<span>50</span>条&nbsp;&nbsp;&nbsp;第<span>3</span>/<span>5</span>页&nbsp;&nbsp;&nbsp;<a href="#">首页</a>&nbsp;&nbsp;&nbsp;<a href="#">上一页</a>&nbsp;&nbsp;&nbsp;<a href="#">下一页</a>&nbsp;&nbsp;&nbsp;<a href="#">末页</a></p></div>
+		</div>
+	</div>
+
+	<div class="foot">
+		<div class="footcontent"><p>版权所有：辽宁省公安XXXXXX<br>地址：XXXXXXXXX 邮编：XXXXXX 服务热线：XXX-XXX-XXX<br>技术支持：深圳市XXX计算机有限公司 推荐使用IE8.0以上版本浏览器1024*768分辨率</p></div>
+	</div>
+</div>
+</body>
+</html>
