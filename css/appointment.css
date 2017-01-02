@@ -1,0 +1,270 @@
+.main{
+	padding-bottom: 0px;
+}
+.foot{
+	padding-top: 9px;
+}
+.appointment{
+	width: 996px;
+	height: 538px;
+	background: url(../images/apmbg.jpg) repeat-x;
+	position: relative;
+
+}
+.shader,.apmlogin,.apmclose,.rlrgs,.layerrgs,.rlrgsbt,.layerrgsbt,.register p,.apmwel{
+	position: absolute;
+}
+.shader{
+	width: 100%;
+	height: 100%;
+	background: #000000;
+	filter:alpha(opacity=70);
+	opacity: 0.7;
+	z-index: 13;
+}
+.apmlogin,.apmwel{
+	width: 309px;
+	height: 361px;
+	padding: 0 30px;
+	left: 314px;
+	top: 89px;
+	background: url(../images/apmloginbg.gif) no-repeat;
+	z-index: 14;
+}
+/*
+.apmlogin{
+
+}
+.apmwel{
+
+}*/
+.apmclose{
+	width: 26px;
+	height: 25px;
+	background: url(../images/close.jpg) no-repeat;
+	top: 3px;
+	right: 0px;
+}
+.apmclose:hover{
+	cursor: pointer;
+	background: url(../images/close.jpg) -0px -25px no-repeat;
+}
+.apmtitle{
+	width: 100%;
+	height: 50px;
+	margin: 10px auto 16px auto;
+	border-bottom: dashed 1px #CACACA;
+	line-height: 50px;
+	text-align: center;
+	color: #0239aa;
+	font-size: 26px;
+	font-family: Microsoft YaHei;
+}
+.apmname,.apmpsw{
+	width: 100%;
+	height: 50px;
+	margin-bottom: 10px;
+	line-height: 50px;
+}
+.apmname{
+	background: url(../images/apmname.gif) no-repeat;
+}
+.apmpsw{
+	background: url(../images/apmpsw.gif) no-repeat;
+}
+.apmname input,.apmpsw input{
+	height: 100%;
+	width: 224px;
+	margin: 0px 5px 0px 80px;
+	border:  none;
+	outline: none;
+	background: none;
+	overflow: hidden;
+}
+.apmhint{
+	width: 100%;
+	height: 20px;
+}
+.apmerro,.apmforgetpsw{
+	height: 100%;
+	font: 15px/20px Microsoft YaHei;
+}
+.apmerro{
+	float: left;
+	color: #FF0000;
+}
+.apmforgetpsw{
+	float: right;
+	color: #8C8C8C;
+	text-decoration: underline;
+}
+.apmforgetpsw:hover{
+	color: #FF0000;
+}
+.apmloginbt{
+	width: 100%;
+	height: 49px;
+	border: none;
+	outline: none;
+	margin: 30px 0px;
+	background: url(../images/apmloginbt.gif) no-repeat;
+	cursor: pointer;
+}
+.opmnewuser{
+	width: 100%;
+	height: 32px;
+	margin-bottom: 3px;
+}
+.nuhint{
+	height: 100%;
+	font: 13px/32px Microsoft YaHei;
+	color: #7d7d7d;
+	float: left;
+}
+.nubg{
+	height: 100%;
+	width: 114px;
+	background: url(../images/newuser.jpg) no-repeat;
+	display: inline-block; 
+	float: right;
+}
+.register{
+	width: 930px;
+	height: 100%;
+	margin: 0 auto;
+	background: url(../images/register.jpg) no-repeat;
+}
+.rlrgs,.layerrgs{
+	left: 55px;
+	top: 113px;
+	width: 397px;
+	height: 228px;
+}
+.layerrgs{
+	left: 545px;
+}
+.rlrgsbt,.layerrgsbt{
+	display: inline-block;
+	width: 272px;
+	height: 63px;
+	bottom: 0px;
+	left: 63px;
+}
+.rlrgsbt{
+	background: url(../images/rlrgs.jpg) no-repeat;
+}
+.rlrgsbt:hover{
+	background: url(../images/rlrgs.jpg) -0px -63px no-repeat;
+}
+.layerrgsbt{
+	background: url(../images/layerlrgs.jpg) no-repeat;
+}
+.layerrgsbt:hover{
+	background: url(../images/layerlrgs.jpg) -0px -63px no-repeat;
+}
+.register p{
+	top: 75px;
+	left: 190px;
+	font:bold 30px SimSun;
+	color: #FFFFFF;
+}
+/******************/
+.meetnote{
+	width: 100%;
+	padding: 0px;
+	padding-top: 30px;
+}
+.mtntcontain{
+	width: 952px;
+	margin: 0 auto;
+}
+.notetitle{
+	display: block;
+	width: 115px;
+	height: 32px;
+	padding-left: 40px;
+	color: #FFFFFF;
+	line-height: 32px;
+	background: url(../images/msboxsumit.png) no-repeat;
+}
+.notecontent{
+	width:950px;
+	padding: 35px 0px;
+	border: solid 1px #0239AA; 
+}
+
+.notecontent p{
+	width: 900px;
+	margin: 0px auto 10px auto;
+	line-height: 23px;
+	text-indent:28px;
+}
+.noteagree{
+	height: 33px;
+	width: 228px;
+	margin: 30px auto 47px auto;
+}
+.ntgrcheck{
+	width: 48px;
+	line-height: 33px;
+	color: #0239AA;
+	margin-right: 10px;
+	float: left;
+}
+.ntgrcheck input{
+	margin-right: 7px;
+	position: relative;
+	top: 2px;
+}
+.noteagree input[type="button"]{
+	margin-right: 10px;
+	color: #FFFFFF;
+	font-weight: bold;
+	font-size: 13px;
+	width: 75px;
+	height: 100%;
+	float: left;
+	border: none;
+	outline: none;
+	background: url(../images/msboxsumit.png) -0 -32px no-repeat;
+}
+.noteagree input[type="button"]:hover{
+	cursor: pointer;
+	background: url(../images/msboxsumit.png) -75px -32px no-repeat;
+}
+/*************meetitem**************/
+.meetitem{
+	height: auto;
+	width: 918px;
+	padding: 100px 39px;
+	overflow: hidden;
+}
+.mtitdetail{
+	width: 226px;
+	margin: 0px 40px;
+	display: block;
+	float: left;
+}
+.mtitdetail p{
+	width: 192px;
+	height: 31px;
+	margin: 0px 17px;
+	color: #FFFFFF;
+	font:18px/31px Microsoft YaHei;
+	text-align: center;
+	background: url(../images/alist1p.png) no-repeat;
+}
+.mtitdetail span{
+	display: block;
+	width: 100%;
+	height: 136px;
+}
+span.meetapply{
+	background: url(../images/alist8.png) no-repeat;
+}
+span.meetrevocation{
+	background: url(../images/alist9.png) no-repeat;
+}
+span.meetprocess{
+	background: url(../images/alist10.png) no-repeat;
+}

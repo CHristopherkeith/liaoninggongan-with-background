@@ -1,0 +1,267 @@
+.main{
+	padding: 28px 0px 26px 0px;
+	width: 1000px;
+}
+.rlrgsdetail,.lyrgsdetail{
+	width: 100%;
+}
+.rldtltop,.lydtltop{
+	width: 998px;
+	height: 39px;
+	border: solid 1px #B04A00;
+	background: url(../images/rsgtitle.jpg) no-repeat;
+	position: relative;
+}
+.lydtltop{
+	background: url(../images/rsgtitle.jpg) -0px -39px no-repeat;
+	border: solid 1px #00451D;
+}
+.rldtcontain,.lydtcontain{
+	width: 998px;
+	border: solid 1px #C8C8C8;
+	border-top: none;
+	overflow: hidden;
+}
+.rldtltop span,.lydtltop span{
+	display: inline-block;
+	margin:0px 0px 0px 15px;
+	float: left;
+}
+.rldtltoplogo,.lydtltoplogo{
+	position: absolute;
+	bottom: 8px;
+	width: 50px;
+	height: 50px;
+	background: url(../images/relation.png) no-repeat;
+}
+.lydtltoplogo{
+	background: url(../images/layer.png) no-repeat;
+}
+span.rldtltoptitle,span.lydtltoptitle{
+	font: bold 18px/39px Arial,SimSun;
+	color: #0239AA;
+	letter-spacing: 3px;
+	margin-left: 80px;
+}
+span.lydtltoptitle{
+	color: #00451D;
+}
+.rlstep1,.rlstep2,.rlstep3,.rlstep4,.lystep1,.lystep2,.lystep3,.lystep4{
+	margin: 23px auto 42px auto;
+	width: 940px;
+	height: 41px;
+}
+.rlstep1{
+	background: url(../images/rlstep.jpg) no-repeat;
+}
+.rlstep2{
+	background: url(../images/rlstep.jpg) -0px -41px no-repeat;
+}
+.rlstep3{
+	background: url(../images/rlstep.jpg) -0px -82px no-repeat;
+}
+.rlstep4{
+	background: url(../images/rlstep.jpg) -0px -123px no-repeat;
+}
+.lystep1{
+	background: url(../images/layerstep.jpg) no-repeat;
+}
+.lystep2{
+	background: url(../images/layerstep.jpg) -0px -41px no-repeat;
+}
+.lystep3{
+	background: url(../images/layerstep.jpg) -0px -82px no-repeat;
+}
+.lystep4{
+	background: url(../images/layerstep.jpg) -0px -123px no-repeat;
+}
+div[class^="rlstep"] span,div[class^="lystep"] span{
+	cursor: pointer;
+	display: inline-block;
+	width: 235px;
+	height: 41px;
+}
+div[class^="rldtinput"],div[class^="lydtinput"]{
+	width: 940px;
+	margin: 0 auto;
+	overflow: hidden;
+	display: none;
+}
+div[class^="rldtinput"] div[class^="rldt"],div[class^="lydtinput"] div[class^="lydt"]{
+	width: 885px;
+	height: 34px;
+	margin: 0px 0px 20px 55px;
+}
+div[class^="rldtinput"] input,div[class^="rldtinput"] p,div[class^="lydtinput"] input,div[class^="lydtinput"] p{
+	float: left;
+	line-height: 34px;
+}
+div[class^="rldtinput"] p[class$="title"],div[class^="lydtinput"] p[class$="title"]{
+	height: 34px;
+	width: 176px;
+	color: #434343;	
+}
+div[class^="rldtinput"] input,div[class^="lydtinput"] input{
+	width: 260px;
+	height: 26px;
+	margin: 2px 30px 2px 0px;
+	line-height: 26px;
+}
+div[class^="rdmeettype"],div[class^="rdduration"],div[class^="rdatrztype"],div[class^="rdyesno"]{
+	width: 80px;
+	height: 34px;
+	line-height: 34px;
+	float: left;
+}
+div[class^="rdduration"]{
+	width: 65px;
+}
+div.rdmeettype1{
+	width: 170px;
+	margin-right: 10px;
+}
+div.rdatrztype1{
+	width: 100px;
+}
+div.rdatrztype2{
+	width: 160px;
+}
+div[class^="rdyesno"]{
+	width: 130px;
+}
+div[class^="rldtinput"] input[type="radio"],div[class^="lydtinput"] input[type="radio"]{
+	width: auto;
+	height: auto;
+	margin: 0;
+	float: none;
+	position: relative;
+	top: 2px;
+}
+div[class^="rldtinput"] input[type="file"],div[class^="lydtinput"] input[type="file"]{
+	width: 264px;
+	height: 30px;
+	line-height: normal;
+	font-size: 14px;
+	position: relative;
+	top: 3px;
+}
+div[class^="rldtinput"] select,div[class^="lydtinput"] select{
+	width: 262px;
+	height: 28px;
+	margin: 2px 30px 2px 0px;
+	line-height: 28px;
+	box-sizing: content-box;
+	float: left;
+}
+input.date{
+	width: 160px !important;
+	margin-right: 5px !important;
+}
+select.hour{
+	width: 43px !important;
+	margin-right: 5px !important;
+}
+select.minute{
+	width: 43px !important;
+}
+div[class^="rldtinput"] p[class$="title"] span,div[class^="lydtinput"] p[class$="title"] span{
+	font-size: 23px;
+	color: #FF0000;
+	line-height: 28px;
+	position: relative;
+	top: 6px;
+}
+div[class^="rldtinput"] p[class$="hint"],div[class^="lydtinput"] p[class$="hint"]{
+	height: 34px;
+}
+div[class^="rldtinput"] p[class$="hint"] span,div[class^="lydtinput"] p[class$="hint"] span{
+	height: 100%;
+	display: inline-block;
+	float: left;
+	vertical-align: top;
+}
+.rldterrorhint .lefthint,.lydterrorhint .lefthint{
+	width: 35px;
+	background: url(../images/redterrohint.jpg) no-repeat;
+}
+.rldterrorhint .righthint,.lydterrorhint .righthint{
+	width: 8px;
+	background: url(../images/redterrohint.jpg) -112px 0px no-repeat;
+}
+.rldterrorhint span[class^="texthint"],.lydterrorhint span[class^="texthint"]{
+	background: url(../images/redterrohint.jpg) -0px -34px repeat-x;
+	color: #1A3E8A;
+	line-height: 31px;
+}
+/*
+.rldterrorhint span[class$="ok"],.lydterrorhint span[class^="texthint"]{
+
+}*/
+div[class*="dtinput"] p[class$="hint"] span.texthintok{
+	display: none;
+}
+.rldtokhint .lefthint,.lydtokhint .lefthint{
+	width: 35px;
+	background: url(../images/redtokhint.jpg) no-repeat;
+}
+.rldtokhint .righthint,.lydtokhint .righthint{
+	width: 8px;
+	background: url(../images/redtokhint.jpg) -112px 0px no-repeat;
+}
+.rldtokhint span[class^="texthint"],.lydtokhint span[class^="texthint"]{
+	background: url(../images/redtokhint.jpg) -0px -34px repeat-x;
+	color: #1A3E8A;
+	line-height: 31px;
+}
+div[class^="nextprebt"]{
+	
+	width: 250px;
+	margin: 55px auto 75px auto;
+	display: none;
+}
+div.nextprebt1{
+	width: 125px;
+}
+div[class^="nextprebt"]:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+input[class^="next"],input[class^="pre"]{
+	display: block;
+	width: 115px;
+	height: 32px;
+	margin: 0px 5px;
+	border: none;
+	outline: none;
+	background: url(../images/changestep.jpg) no-repeat;
+	color: #FFFFFF;
+	font-weight: bold;
+	float: left;
+}
+.lydtcontain input[class^="next"],.lydtcontain input[class^="pre"]{
+	background: url(../images/changestep.jpg) 0px -32px no-repeat;
+}
+/*
+input[class^="next"]:hover,input[class^="pre"]:hover{
+	background: url(../images/changestep.jpg) 0px -64px no-repeat;
+	color: #0239AA;
+	cursor: pointer;
+}*/
+input.inputhover,.lydtcontain input.inputhover{
+	background: url(../images/changestep.jpg) 0px -64px no-repeat;
+	color: #0239AA;
+	cursor: pointer;
+}
+.lydtnotification{
+	height: 68px !important;
+}
+.lydtnotification .lydttitle{
+	height: 68px !important;
+	line-height: 22px !important;
+}
+.lydtnotification div[class^="rdyesno"]{
+	height: 68px !important;
+	line-height: 68px !important;
+}
